@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+/**
+ * Mavenbird Technologies Private Limited
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://mavenbird.com/Mavenbird-Module-License.txt
+ *
+ * =================================================================
+ *
+ * @category   Mavenbird
+ * @package    Mavenbird_Reindex
+ * @author     Mavenbird Team
+ * @copyright  Copyright (c) 2018-2024 Mavenbird Technologies Private Limited ( http://mavenbird.com )
+ * @license    http://mavenbird.com/Mavenbird-Module-License.txt
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Mavenbird\Reindex\Api\SubscriberInterface" type="Mavenbird\Reindex\Model\Subscriber" />
+    <preference for="Mavenbird\Reindex\Api\ReindexInterface" type="Mavenbird\Reindex\Model\Reindex" />
+    <preference for="Mavenbird\Reindex\Api\StrategyInterface" type="Mavenbird\Reindex\Model\Strategy" />
+
+    <type name="Mavenbird\Reindex\Block\Adminhtml\System\Config\Source\Strategy">
+        <arguments>
+            <argument name="strategies" xsi:type="array">
+                <item name="standard" xsi:type="string">Standard</item>
+                <item name="deferred" xsi:type="string">Deferred</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Mavenbird\Reindex\Model\StrategyResolver">
+        <arguments>
+            <argument name="strategies" xsi:type="array">
+                <item name="standard" xsi:type="object">Mavenbird\Reindex\Model\Strategies\Standard</item>
+                <item name="deferred" xsi:type="object">Mavenbird\Reindex\Model\Strategies\Deferred</item>
+            </argument>
+        </arguments>
+    </type>
+
+</config>
+
+
