@@ -1,76 +1,67 @@
-<a href="http://www.mavenbird.com" title="Magento Extension"><img src="https://image.ibb.co/dHBkYH/Magepal_logo.png" width="100" align="right" alt="Magento2 plugins" /></a>
-
 # Reindex Magento 2 / Adobe Commerce from Admin
-
-[![Total Downloads](https://poser.okvpn.org/mavenbird/magento2-reindex/downloads)](https://www.mavenbird.com/magento2/extensions/reindex.html)
-[![Latest Stable Version](https://poser.okvpn.org/mavenbird/magento2-reindex/v/stable)](https://www.mavenbird.com/magento2/extensions/reindex.html)
-
-##### For Magento 2.0.x, 2.1.x, 2.2.x and 2.3.x
 
 Reindexing your Magento 2 / Adobe Commerce store from Magento's admin has been removed and your only option is to set your indexes to "Update on Save" or reindex using SSH / CLI command line which is time-consuming. With our free Reindex module for Magento 2, you can quickly and easily update individual or all indexes from within your Magento admin. Ideal for project managers or QA department during site development and testing of new product and functionality. This module is not meant for large productions environment.
 
-![Magento Reindex](https://image.ibb.co/ihvetH/Reindex_Magento_2_from_Admin_by_Magepal.gif)
+## Key Features:
 
-Indexes
+- *Reindex from Admin Panel:*
+Easily initiate reindexing processes directly from the Magento admin panel.
+- *Real-time Index Status:*
+View the status of each index, ensuring you are always informed about the indexing state.
+- *Batch Reindexing:*
+Perform reindexing on individual indexes or all indexes in a single click.
+- *Error Notifications:*
+Receive detailed error messages to help identify and resolve indexing issues.
+- *Performance Optimization:*
+Optimize store performance by keeping indexes up-to-date.
 
-```
-catalog_category_product                 Category Products
-catalog_product_category                 Product Categories
-catalog_product_price                    Product Price
-catalog_product_attribute                Product EAV
-cataloginventory_stock                   Stock
-catalogrule_rule                         Catalog Rule Product
-catalogrule_product                      Catalog Product Rule
-catalogsearch_fulltext                   Catalog Search
-```
+## Benefits:
 
-#### Magento Store Reindex Mode
-By default, you can set your store indexers to "Update on Save" or "Update by Schedule". Setting your Magento store to index on save will update your indexes when admin changes occur, while update by schedule only run at a set interval by your cron job. In your server cron must be set up correctly for "Update by Schedule" to work which must be set up by a developer, system admin or hosting company.
+- *Enhanced Administrative Experience:*
+Simplify the management of indexing operations with an intuitive admin interface.
+- *Improved Store Performance:*
+Ensure your store runs smoothly by keeping indexes current.
+- *Time-Saving:*
+Save time and reduce the complexity of reindexing tasks with batch processing and one-click reindex options.
+- *Greater Control:*
+Gain better control over indexing processes with real-time status updates and error notifications.
 
-### Documentation
+## Compatibility:
+This extension is compatible with Magento 2.4.X (PHP - 8.1 - 8.3) version.
 
- - [How to Install Reindex for Magento2](https://www.mavenbird.com/help/docs/how-to-reindex-magento-2/#installation)
+## Installation:
+*Install via composer (recommend)* - 
 
- - [How to setup Reindex for Magento2](https://www.mavenbird.com/help/docs/how-to-reindex-magento-2/#configuration)
- 
-### Installation Using Composer (recommended)
-```
+Easy installation process with step-by-step instructions provided for hassle-free setup.
+~~~~~~~~~~~~~~~~~~~~~
 composer require mavenbird/magento2-reindex
-```
+php bin/magento setup:upgrade
+php bin/magento setup:static-content:deploy
+php bin/magento setup:di:compile
+php bin/magento cache:flush
+~~~~~~~~~~~~~~~~~~~~~
 
-#### How to reindex your Magento 2 / Adobe Commerce store from Command Line - One or more indexers are invalid
+## Upgrade/Update Module:
+Run the following command in Magento 2 root folder for easy update -
+~~~~~~~~~~~~~~~~~~~~~
+composer update mavenbird/magento2-reindex
+php bin/magento setup:upgrade
+php bin/magento setup:static-content:deploy
+php bin/magento setup:di:compile
+php bin/magento cache:flush
+~~~~~~~~~~~~~~~~~~~~~
 
-Reindex Magento Data via SSH (from Magento root folder)
+## Customization Options:
+Tailor the import/export process to match your store's specific requirements with customizable field mapping and error handling options.
 
-> php bin/magento indexer:reindex
+*Configure at Your Ease*
+![Magento Reindex](./doc/gif/Reindex-Magento-2-from-Admin-by-Mavenbird.gif)
 
-Contribution
----
-Want to contribute to this extension? The quickest way is to open a [pull request on GitHub](https://help.github.com/articles/using-pull-requests).
+## Support:
+Dedicated support team available to assist with installation, customization, and any other queries or concerns.
+*[support@mavenbird.com](mailto:support@mavenbird.com)* 
 
+## Get Started:
+Simplify and streamline your indexing operations with our Magento 2 Reindex from Admin Extension. Enhance your administrative capabilities and ensure optimal store performance today!
 
-Support
----
-If you encounter any problems or bugs, please open an issue on [GitHub](https://github.com/mavenbird/magento2-reindex/issues).
-
-Need help setting up or want to customize this extension to meet your business needs? Please email support@mavenbird.com and if we like your idea we will add this feature for free or at a discounted rate.
-
-Magento 2 Extensions
----
-- [Custom SMTP](https://www.mavenbird.com/magento2/extensions/custom-smtp.html)
-- [Catalog Hover Image for Magento](https://www.mavenbird.com/magento2/extensions/catalog-hover-image-for-magento.html)
-- [Enhanced Success Page for Magento 2](https://www.mavenbird.com/magento2/extensions/enhanced-success-page.html)
-- [Enhanced Transactional Emails for Magento 2](https://www.mavenbird.com/magento2/extensions/enhanced-transactional-emails.html)
-- [Google Tag Manager](https://www.mavenbird.com/magento2/extensions/google-tag-manager.html) 
-- [Enhanced E-commerce](https://www.mavenbird.com/magento2/extensions/enhanced-ecommerce-for-google-tag-manager.html) 
-- [Reindex](https://www.mavenbird.com/magento2/extensions/reindex.html) 
-- [Custom Shipping Method](https://www.mavenbird.com/magento2/extensions/custom-shipping-rates-for-magento-2.html) 
-- [Preview Order Confirmation](https://www.mavenbird.com/magento2/extensions/preview-order-confirmation-page-for-magento-2.html)
-- [Guest to Customer](https://www.mavenbird.com/magento2/extensions/guest-to-customer.html) 
-- [Admin Form Fields Manager](https://www.mavenbird.com/magento2/extensions/admin-form-fields-manager-for-magento-2.html) 
-- [Customer Dashboard Links Manager](https://www.mavenbird.com/magento2/extensions/customer-dashboard-links-manager-for-magento-2.html) 
-- [Lazy Loader](https://www.mavenbird.com/magento2/extensions/lazy-load.html) 
-- [Order Confirmation Page Miscellaneous Scripts](https://www.mavenbird.com/magento2/extensions/order-confirmation-miscellaneous-scripts-for-magento-2.html)
-- [HTML Minifier for Magento2](https://www.mavenbird.com/magento2/extensions/html-minifier.html)
-
-© Mavenbird LLC. | [www.mavenbird.com](http://www.mavenbird.com "Magento 2.2 Extensions Marketplace")
+*Thank you!*
