@@ -4,7 +4,7 @@ Reindexing your Magento 2 / Adobe Commerce store from Magento's admin has been r
 
 ## Key Features:
 
-- *Reindex from Admin Panel:*
+- **Reindex from Admin Panel:**
 Easily initiate reindexing processes directly from the Magento admin panel.
 - *Real-time Index Status:*
 View the status of each index, ensuring you are always informed about the indexing state.
