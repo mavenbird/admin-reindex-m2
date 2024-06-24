@@ -6,24 +6,24 @@ Reindexing your Magento 2 / Adobe Commerce store from Magento's admin has been r
 
 - **Reindex from Admin Panel:**
 Easily initiate reindexing processes directly from the Magento admin panel.
-- *Real-time Index Status:*
+- **Real-time Index Status:**
 View the status of each index, ensuring you are always informed about the indexing state.
-- *Batch Reindexing:*
+- **Batch Reindexing:**
 Perform reindexing on individual indexes or all indexes in a single click.
-- *Error Notifications:*
+- **Error Notifications:**
 Receive detailed error messages to help identify and resolve indexing issues.
-- *Performance Optimization:*
+- **Performance Optimization:**
 Optimize store performance by keeping indexes up-to-date.
 
 ## Benefits:
 
-- *Enhanced Administrative Experience:*
+- **Enhanced Administrative Experience:**
 Simplify the management of indexing operations with an intuitive admin interface.
-- *Improved Store Performance:*
+- **Improved Store Performance:**
 Ensure your store runs smoothly by keeping indexes current.
-- *Time-Saving:*
+- **Time-Saving:**
 Save time and reduce the complexity of reindexing tasks with batch processing and one-click reindex options.
-- *Greater Control:*
+- **Greater Control:**
 Gain better control over indexing processes with real-time status updates and error notifications.
 
 ## Compatibility:
@@ -55,7 +55,9 @@ php bin/magento cache:flush
 Tailor the import/export process to match your store's specific requirements with customizable field mapping and error handling options.
 
 *Configure at Your Ease*
-![Magento Reindex](./doc/gif/Reindex-Magento-2-from-Admin-by-Mavenbird.gif)
+![img1](./doc/images/1.png)
+![img2](./doc/images/2.png)
+![img3](./doc/images/3.png)
 
 ## Support:
 Dedicated support team available to assist with installation, customization, and any other queries or concerns.
