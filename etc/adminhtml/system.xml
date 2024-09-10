@@ -21,12 +21,12 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
 	<system>
-		<tab id="mavenbird" sortOrder="400" translate="label">
-			<label>Mavenbird Extensions</label>
-		</tab>
+		<tab id="mavenbird" sortOrder="100" translate="label" class="tab-mavenbird-extensions">
+            <label><![CDATA[Mavenbird Extensions]]></label>
+        </tab>
 		<section id="mavenbird_reindex" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="5" translate="label">
-			<label>Reindex</label>
 			<tab>mavenbird</tab>
+			<label>Reindex</label>
 			<resource>Mavenbird_Reindex::config_mavenbird_reindex</resource>
 			<group id="about_mavenbird" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="0" translate="label">
 				<attribute type="expanded">1</attribute>
