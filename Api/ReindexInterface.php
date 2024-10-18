@@ -28,7 +28,10 @@ namespace Mavenbird\Reindex\Api;
 interface ReindexInterface
 {
     /**
+     * Reindex
+     *
      * @param array|null $indexIds
+     * @return void
      */
     public function reindex(array $indexIds = null) : void;
 }

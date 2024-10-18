@@ -38,9 +38,11 @@ class ReindexOnTheFly extends Indexer
     private $reindexStrategy;
 
     /**
-     * Index constructor.
+     * Construct
+     *
      * @param Context $context
      * @param IndexerFactory $indexerFactory
+     * @param StrategyInterface $reindexStrategy
      */
     public function __construct(
         Context $context,
@@ -53,6 +55,8 @@ class ReindexOnTheFly extends Indexer
     }
 
     /**
+     * Execute
+     *
      * @return void
      */
     public function execute()

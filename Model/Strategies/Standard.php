@@ -24,7 +24,7 @@ use Mavenbird\Reindex\Model\Reindex;
 
 class Standard implements StrategyInterface
 {
-    const STRATEGY_KEY = 'standard';
+    public const STRATEGY_KEY = 'standard';
 
     /** @var Reindex */
     private $reindexService;

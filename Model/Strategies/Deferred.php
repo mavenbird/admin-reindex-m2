@@ -24,8 +24,8 @@ use Magento\Framework\MessageQueue\PublisherInterface;
 
 class Deferred implements StrategyInterface
 {
-    const STRATEGY_KEY = 'deferred';
-    const TOPIC_NAME = 'mavenbird.reindex';
+    public const STRATEGY_KEY = 'deferred';
+    public const TOPIC_NAME = 'mavenbird.reindex';
 
     /** @var PublisherInterface */
     private $publisher;

@@ -28,7 +28,10 @@ namespace Mavenbird\Reindex\Api;
 interface StrategyInterface
 {
     /**
+     * Process
+     *
      * @param array|null $indexIds
+     * @return void
      */
     public function process(array $indexIds = null) : void;
 }
