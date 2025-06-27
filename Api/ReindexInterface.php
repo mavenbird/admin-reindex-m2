@@ -33,5 +33,5 @@ interface ReindexInterface
      * @param array|null $indexIds
      * @return void
      */
-    public function reindex(array $indexIds = null) : void;
+    public function reindex(?array $indexIds = null) : void;
 }

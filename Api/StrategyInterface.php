@@ -33,5 +33,5 @@ interface StrategyInterface
      * @param array|null $indexIds
      * @return void
      */
-    public function process(array $indexIds = null) : void;
+    public function process(?array $indexIds = null) : void;
 }

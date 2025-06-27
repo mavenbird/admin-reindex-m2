@@ -41,7 +41,7 @@ class Reindex implements ReindexInterface
      *
      * @param array|null $indexIds
      */
-    public function reindex(array $indexIds = null) : void
+    public function reindex(?array $indexIds = null) : void
     {
         foreach ($indexIds as $index) {
             $indexer = $this->indexerFactory->create();
