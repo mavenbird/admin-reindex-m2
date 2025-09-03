@@ -2,10 +2,11 @@
     "name": "mavenbird/magento2-reindex",
     "description": "Magento 2 module for reindexing data, improving performance and data consistency.",
     "require": {
-        "php": ">=8.0.0"
+        "php": ">=8.0.0",
+        "mavenbird/module-core": "*"
     },
     "type": "magento2-module",
-    "version": "1.0.8",
+    "version": "1.1.0",
     "license": "proprietary",
     "authors": [
         {
