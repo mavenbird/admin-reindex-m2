@@ -28,6 +28,11 @@
             <tab>mavenbird</tab>
             <label>Reindex</label>
             <resource>Mavenbird_Reindex::config_mavenbird_reindex</resource>
+            <group id="branding" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Branding</label>
+                <frontend_model>Mavenbird\Reindex\Block\Adminhtml\Render\Header</frontend_model>
+            </group>
             <group id="about_mavenbird" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="0" translate="label">
                 <attribute type="expanded">1</attribute>
                 <label>About Mavenbird Reindex</label>
