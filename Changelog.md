@@ -1,3 +1,7 @@
+1.1.0 - September 1, 2024
+=============
+* Minor Bug Fixes
+
 1.0.8 – June 25, 2025
 =============
 * Compatible with Magento Version 2.4.8-p1.
