@@ -25,7 +25,7 @@ use Magento\Framework\Exception\InputException;
 
 class StrategyResolver
 {
-    const XML_STRATEGY_PATH = 'mavenbird_reindex/about/strategy';
+    public const XML_STRATEGY_PATH = 'mavenbird_reindex/about/strategy';
 
     /** @var ScopeConfigInterface */
     private $scopeConfig;

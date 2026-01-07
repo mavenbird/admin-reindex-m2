@@ -36,6 +36,8 @@ class Strategy implements OptionSourceInterface
     }
 
     /**
+     * Option Array
+     *
      * @return array
      */
     public function toOptionArray() : array

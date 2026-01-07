@@ -36,11 +36,11 @@
 					<frontend_model>Mavenbird\Reindex\Block\Adminhtml\System\Config\Form\Field\Link</frontend_model>
 				</field>
 
-				<field id="strategy" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
-					<label>Strategy</label>
-					<source_model>Mavenbird\Reindex\Block\Adminhtml\System\Config\Source\Strategy</source_model>
-				</field>
-			</group>
-		</section>
-	</system>
+                <field id="strategy" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Strategy</label>
+                    <source_model>Mavenbird\Reindex\Block\Adminhtml\System\Config\Source\Strategy</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
 </config>

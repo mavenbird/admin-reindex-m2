@@ -26,7 +26,10 @@ namespace Mavenbird\Reindex\Api;
 interface SubscriberInterface
 {
     /**
+     * Process Message
+     *
      * @param array $indices
+     * @return void
      */
     public function processMessage(array $indices) : void;
 }

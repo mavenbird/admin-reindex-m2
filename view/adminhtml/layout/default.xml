@@ -1,4 +1,5 @@
-<?php
+<?xml version="1.0"?>
+<!--
 /**
  * Mavenbird Technologies Private Limited
  *
@@ -17,21 +18,9 @@
  * @copyright  Copyright (c) 2018-2024 Mavenbird Technologies Private Limited ( http://mavenbird.com )
  * @license    http://mavenbird.com/Mavenbird-Module-License.txt
  */
-
-namespace Mavenbird\Reindex\Api;
-
-/**
- * Handles strategy for reindexing from backend. Process now, defer to message queue etc.
- *
- * @api
- */
-interface StrategyInterface
-{
-    /**
-     * Process
-     *
-     * @param array|null $indexIds
-     * @return void
-     */
-    public function process(?array $indexIds = null) : void;
-}
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Mavenbird_Reindex::css/menu.css"/>
+    </head>
+</page>
