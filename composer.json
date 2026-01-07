@@ -1,12 +1,25 @@
 {
     "name": "mavenbird/magento2-reindex",
-    "description": "Magento 2 module for reindexing data, improving performance and data consistency.",
+    "description": "Reindex your Magento2 store quickly and easily from backend/admin, instead of command line.",
+    "keywords": [
+        "magento 2",
+        "magento2",
+        "reindex",
+        "backend reindex",
+        "admin reindex",
+        "adobe commerce reindex",
+        "reindexing magento2"
+    ],
+
     "require": {
         "php": ">=8.0.0"
     },
     "type": "magento2-module",
-    "version": "1.0.8",
-    "license": "proprietary",
+    "version": "1.0.0",
+    "license": [
+        "proprietary"
+    ],
+
     "authors": [
         {
             "name": "Mavenbird",
