@@ -1,7 +1,7 @@
 <div class="mb-block-mavenbird">
     <a class="helpbutton" href="https://www.mavenbird.com/" target="_blank"></a>
     <p>
-        <strong><?php echo $block->getDeveloperMessage(); ?></strong>
+        <strong><?= $escaper->escapeHtml($block->getDeveloperMessage()) ?></strong>
     </p>
 
     <div class="mb-links">
