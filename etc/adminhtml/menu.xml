@@ -23,7 +23,7 @@
     <menu>
         <update id="Magento_Backend::mbmenu" title="Mavenbird" module="Magento_Backend" sortOrder="10" resource="Magento_Backend::mbmenu" />
 
-        <add id="Mavenbird_Reindex::Heading" title="Reindex" module="Mavenbird_Reindex" sortOrder="20" parent="Magento_Backend::mbmenu" resource="Mavenbird_Reindex::Heading" />
-        <add id="Mavenbird_Reindex::configuration" title="Configuration" module="Mavenbird_Reindex" sortOrder="20" parent="Mavenbird_Reindex::Heading" action="adminhtml/system_config/edit/section/mavenbird_reindex" resource="Mavenbird_Reindex::configuration"/>
+        <add id="Mavenbird_Reindex::Heading" title="Reindex" module="Mavenbird_Reindex" sortOrder="20" parent="Magento_Backend::mbmenu" resource="Mavenbird_Reindex::config_mavenbird_reindex" />
+        <add id="Mavenbird_Reindex::configuration" title="Configuration" module="Mavenbird_Reindex" sortOrder="20" parent="Mavenbird_Reindex::Heading" action="adminhtml/system_config/edit/section/mavenbird_reindex" resource="Mavenbird_Reindex::config_mavenbird_reindex"/>
     </menu>
 </config>
